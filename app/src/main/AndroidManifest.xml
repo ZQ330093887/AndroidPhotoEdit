@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="injection.sw.com.mycocularlater">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="injection.sw.com.mycocularlater.imagepicker.ui.ImageCropActivity"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="injection.sw.com.mycocularlater.imagepicker.ui.ImageGridActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="injection.sw.com.mycocularlater.imagepicker.ui.ImagePreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="injection.sw.com.mycocularlater.imagepicker.ui.CompileBitmapActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="injection.sw.com.mycocularlater.imagepicker.ui.ImagePreviewDelActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+
+        <activity
+            android:name="cn.jarlen.photoedit.activity.FilterTestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.ImageFilterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.WarpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.PhotoFrameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.DrawBaseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.MosaicActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.ImagePasteActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.AddWatermarkActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.EnhanceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.RevolveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+        <activity
+            android:name="cn.jarlen.photoedit.activity.AddTextActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTranslucent" />
+    </application>
+
+
+</manifest>

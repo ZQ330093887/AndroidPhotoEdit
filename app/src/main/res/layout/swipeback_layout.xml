@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<injection.sw.com.mycocularlater.imagepicker.view.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</injection.sw.com.mycocularlater.imagepicker.view.SwipeBackLayout>

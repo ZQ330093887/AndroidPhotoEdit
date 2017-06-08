@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <injection.sw.com.mycocularlater.imagepicker.view.ViewPagerFixed
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000" />
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/include_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/root_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/photo_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#cc22292c"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cc22292c"
+            android:visibility="visible">
+
+            <injection.sw.com.mycocularlater.imagepicker.view.SuperCheckBox
+                android:id="@+id/cb_origin"
+                style="@style/SuperCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="8dp"
+                android:text="@string/origin_photo"
+                android:textColor="#FFF"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/edit"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <injection.sw.com.mycocularlater.imagepicker.view.SuperCheckBox
+                android:id="@+id/cb_check"
+                style="@style/SuperCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:drawablePadding="4dp"
+                android:includeFontPadding="true"
+                android:paddingLeft="8dp"
+                android:text="@string/choise"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
